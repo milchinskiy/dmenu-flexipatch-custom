@@ -12,7 +12,7 @@ static int caret_width = 2;                 /* -cw option; set default caret wid
 static int fuzzy = 1;                       /* -F  option; if 0, dmenu doesn't use fuzzy matching */
 #endif // FUZZYMATCH_PATCH
 #if INCREMENTAL_PATCH
-static int incremental = 0;                 /* -r  option; if 1, outputs text each time a key is pressed */
+static int incremental = 1;                 /* -r  option; if 1, outputs text each time a key is pressed */
 #endif // INCREMENTAL_PATCH
 #if INSTANT_PATCH
 static int instant = 0;                     /* -n  option; if 1, selects matching item without the need to press enter */
@@ -22,15 +22,15 @@ static int center = 1;                      /* -c  option; if 0, dmenu won't be 
 static int min_width = 500;                 /* minimum width when centered */
 #endif // CENTER_PATCH
 #if BARPADDING_PATCH
-static const int vertpad = 10;              /* vertical padding of bar */
-static const int sidepad = 10;              /* horizontal padding of bar */
+static const int vertpad = 0;              /* vertical padding of bar */
+static const int sidepad = 12;              /* horizontal padding of bar */
 #endif // BARPADDING_PATCH
 #if RESTRICT_RETURN_PATCH
 static int restrict_return = 0;             /* -1 option; if 1, disables shift-return and ctrl-return */
 #endif // RESTRICT_RETURN_PATCH
 /* -fn option overrides fonts[0]; default X11 font or font set */
 #if PANGO_PATCH
-static char font[] = "monospace 10";
+static char font[] = "JetBrainsMono Nerd Font:weight=semibold:size=10:antialias=true:autohint=true";
 #else
 #if XRESOURCES_PATCH
 static char *fonts[] =
@@ -38,7 +38,7 @@ static char *fonts[] =
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"monospace:size=10"
+	"JetBrainsMono Nerd Font:weight=semibold:size=10:antialias=true:autohint=true"
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
@@ -91,21 +91,21 @@ const
 #endif // XRESOURCES_PATCH
 char *colors[][2] = {
 	/*               fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel]  = { "#eeeeee", "#005577" },
-	[SchemeOut]  = { "#000000", "#00ffff" },
+	[SchemeNorm] = { "#D8DEE9", "#2E3440" },
+	[SchemeSel]  = { "#ECEFF4", "#5E81AC" },
+	[SchemeOut]  = { "#2E3440", "#88C0D0" },
 	#if BORDER_PATCH
-	[SchemeBorder] = { "#000000", "#005577" },
+	[SchemeBorder] = { "#2E3440", "#5E81AC" },
 	#endif // BORDER_PATCH
 	#if MORECOLOR_PATCH
 	[SchemeMid]  = { "#eeeeee", "#770000" },
 	#endif // MORECOLOR_PATCH
 	#if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
-	[SchemeSelHighlight]  = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	[SchemeSelHighlight]  = { "#ffffff", "#5E81AC" },
+	[SchemeNormHighlight] = { "#EBCB8B", "#2E3440" },
 	#endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
 	#if HIGHPRIORITY_PATCH
-	[SchemeHp]   = { "#bbbbbb", "#333333" },
+	[SchemeHp]   = { "#EBCB8B", "#3B4252" },
 	#endif // HIGHPRIORITY_PATCH
 	#if EMOJI_HIGHLIGHT_PATCH
 	[SchemeHover]  = { "#ffffff", "#353D4B" },
@@ -123,7 +123,7 @@ static unsigned int lines      = 0;
 static unsigned int columns    = 0;
 #endif // GRID_PATCH
 #if LINE_HEIGHT_PATCH
-static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */
+static unsigned int lineheight = 24;         /* -h option; minimum height of a menu line     */
 static unsigned int min_lineheight = 8;
 #endif // LINE_HEIGHT_PATCH
 #if NAVHISTORY_PATCH
