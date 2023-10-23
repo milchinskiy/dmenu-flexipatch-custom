@@ -38,7 +38,7 @@ static char *fonts[] =
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"JetBrainsMono Nerd Font:weight=semibold:size=10:antialias=true:autohint=true"
+	"JetBrainsMono Nerd Font-10:weight=semibold:antialias=true:autohint=false"
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
