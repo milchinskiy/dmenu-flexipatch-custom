@@ -30,7 +30,7 @@ static int restrict_return = 0;             /* -1 option; if 1, disables shift-r
 #endif // RESTRICT_RETURN_PATCH
 /* -fn option overrides fonts[0]; default X11 font or font set */
 #if PANGO_PATCH
-static char font[] = "JetBrainsMono Nerd Font:weight=semibold:size=10:antialias=true:autohint=true";
+static char font[] = "JetBrainsMono NFP-10:weight=medium:antialias=true:autohint=false";
 #else
 #if XRESOURCES_PATCH
 static char *fonts[] =
@@ -38,7 +38,7 @@ static char *fonts[] =
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"JetBrainsMono Nerd Font-10:weight=semibold:antialias=true:autohint=false"
+	"JetBrainsMono NFP-10:weight=medium:antialias=true:autohint=false"
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
