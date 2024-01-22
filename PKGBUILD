@@ -2,7 +2,7 @@
 
 pkgname=dmenu-flexipatch
 pkgver=5.2
-pkgrel=4
+pkgrel=5
 pkgdesc="dmenu is a dynamic menu for X, originally designed for dwm"
 url="https://tools.suckless.org/dmenu/"
 arch=('i686' 'x86_64')
