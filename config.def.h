@@ -6,7 +6,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static int opacity = 1;                     /* -o  option; if 0, then alpha is disabled */
 #endif // ALPHA_PATCH
 #if CARET_WIDTH_PATCH
-static int caret_width = 2;                 /* -cw option; set default caret width */
+static int caret_width = 1;                 /* -cw option; set default caret width */
 #endif // CARET_WIDTH_PATCH
 #if FUZZYMATCH_PATCH
 static int fuzzy = 1;                       /* -F  option; if 0, dmenu doesn't use fuzzy matching */
@@ -22,8 +22,8 @@ static int center = 0;                      /* -c  option; if 0, dmenu won't be 
 static int min_width = 500;                 /* minimum width when centered */
 #endif // CENTER_PATCH
 #if BARPADDING_PATCH
-static const int vertpad = 0;              /* vertical padding of bar */
-static const int sidepad = 12;              /* horizontal padding of bar */
+static const int vertpad = 5;              /* vertical padding of bar */
+static const int sidepad = 19;              /* horizontal padding of bar */
 #endif // BARPADDING_PATCH
 #if RESTRICT_RETURN_PATCH
 static int restrict_return = 0;             /* -1 option; if 1, disables shift-return and ctrl-return */

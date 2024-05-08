@@ -11,7 +11,7 @@
  * is to have dmenu appear on top of the bar when using said patch in dwm.
  * https://github.com/bakkeby/patches/wiki/barpadding
  */
-#define BARPADDING_PATCH 0
+#define BARPADDING_PATCH 1
 
 /* This patch adds a border around the dmenu window. It is intended to be used with the center
  * or xyw patches, to make the menu stand out from similarly coloured windows.
@@ -346,7 +346,7 @@
  *
  * https://tools.suckless.org/dmenu/patches/xresources/
  */
-#define XRESOURCES_PATCH 0
+#define XRESOURCES_PATCH 1
 
 /* This patch adds options for specifying dmenu window position and width.
  * The center patch takes precedence over the XYW patch if enabled.
