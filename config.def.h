@@ -22,8 +22,8 @@ static int center = 0;                      /* -c  option; if 0, dmenu won't be 
 static int min_width = 500;                 /* minimum width when centered */
 #endif // CENTER_PATCH
 #if BARPADDING_PATCH
-static const int vertpad = 5;              /* vertical padding of bar */
-static const int sidepad = 19;              /* horizontal padding of bar */
+static const int vertpad = 0;              /* vertical padding of bar */
+static const int sidepad = 0;              /* horizontal padding of bar */
 #endif // BARPADDING_PATCH
 #if RESTRICT_RETURN_PATCH
 static int restrict_return = 0;             /* -1 option; if 1, disables shift-return and ctrl-return */
